@@ -176,25 +176,24 @@ render(){
 
 : null}
 
-   
-   
 
-{ !statsCheck ?   
-
-<Image 
-     style={{ width: "100%", height: 213, marginBottom: 15, backgroundColor: "black"}}
-    source={require("./familjenFotto.png")} /> : null }
       
-      { loginActive && !statsCheck ?   <TextInput
+{ loginActive && !statsCheck ?   
+
+<TextInput
       
         placeholder="Username"
         placeholderTextColor="#841584"
+        
         style={styles.TextInputStyle}
         onChangeText={text => this.setState({value : text})}
         value={this.value}
     />
 
-: null }
+: null } 
+   
+
+
     
 { loginActive && !statsCheck ?  
 
@@ -238,7 +237,7 @@ render(){
 { loginActive ? 
 
 
-
+<View style = {[{ width: "50%", height: "100%", margin: 10,alignSelf: "center"}]}> 
         
         <Button 
           onPress={this.login_XSRFTOKEN}
@@ -248,6 +247,8 @@ render(){
         
         >
         </Button>
+
+</View> 
 
 
 
@@ -296,19 +297,18 @@ const styles = StyleSheet.create({
   },
   TextInputStyle:{
     
-    //textAlign: 'center',
-    
-    textAlign: 'left',
-    
-    width: '100%',
+
+    width: '50%',
     fontSize:16,
     color: '#841584',
     paddingLeft: 8,
     paddingTop:10,
     paddingBottom:10,
-    //backgroundColor: "#101010"
+    backgroundColor: "#101010",
     borderColor: '#841584',
     borderWidth: 1,
+    textAlign:"center",
+    alignSelf: "center"
     
   },
   padding: {

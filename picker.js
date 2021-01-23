@@ -24,7 +24,7 @@ class PickerComponent extends Component{
                     
                     >
                     
-                    <Picker.Item color="#841584" label='Select platform' value=''  />
+                    <Picker.Item color="#841584" label='SELECT A PLATFORM' value=''  />
                     <Picker.Item color="#841584" label="Blizzard" value="battle" />
                     <Picker.Item color="#841584" label="Xbox" value="xbl" />
                     <Picker.Item color="#841584" label="PlayStation" value="psn" />
@@ -45,23 +45,26 @@ class PickerComponent extends Component{
 const styles = StyleSheet.create({
     container: {
         
-        color: "white",
-        width: '100%',
-       
+      
+        width: '50%',
+        height:"15%",
+    
         borderColor: '#841584',
         borderWidth: 1,
+        alignSelf: "center"
         
       
 
-        
-     
+      
+       
     
     },
     picker: {
         color: '#841584',
-        width: '60%',
-      
-        //backgroundColor: '#101010',        
+        width: '100%',
+        height:"100%",
+        textAlign:"center",
+        backgroundColor: '#101010',     //  #101010
     
     }
 });

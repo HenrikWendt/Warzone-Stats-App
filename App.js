@@ -1,6 +1,6 @@
 
 import React, { } from 'react';
-import { StyleSheet, View,Image,Text } from 'react-native';
+import { StyleSheet, View,Image,Text, ImageBackground } from 'react-native';
 import FirstWindow from './FirstWindow'
 
 
@@ -15,8 +15,8 @@ export default function App() {
     
     
     <Image 
-     style={{ width: "100%", height:1, backgroundColor: "black",paddingTop: 200,}}
-    source={require("./logga3.png")} /> 
+     style={{ width: "70%", height:'70%', backgroundColor: "black",}}
+    source={require("./logga_webb_ny.png")} /> 
     
   < FirstWindow />
 
@@ -25,6 +25,7 @@ export default function App() {
    
     </View>
 
+
     
 
   );
@@ -32,15 +33,27 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+
+    width:"100%",
+    height:"100%",
+
+  
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'black',
 
   },White: {
     color: '#fff',
     textAlign: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#0000',
+    
+    backgroundImageButton:{
+  
+      width: '100%',
+      height: '100%',
+      opacity: 1
+    },
     
   },
 });
